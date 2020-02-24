@@ -11,7 +11,7 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        MY STACK v2
+                        MY STACK v3
                     </h1>
                     <h2 class="subtitle">
                         Your local development environment - 

@@ -52,9 +52,9 @@
                         <hr>
                         <div class="content">
                             <ul>
-                                <li><a href="http://pl.biz.net.id/stack/phpinfo.php">phpinfo()</a></li>
-                                <li><a href="http://pl.biz.net.id:8280">phpMyAdmin</a></li>
-                                <li><a href="http://pl.biz.net.id/stack/test_db.php">Test DB Connection</a></li>
+                                <li><a href="phpinfo.php">phpinfo()</a></li>
+                                <li><a href="http://phpmyadmin.hanif.sebelassatu.net">phpMyAdmin</a></li>
+                                <li><a href="test_db.php">Test DB Connection</a></li>
                             </ul>
                         </div>
                     </div>

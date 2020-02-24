@@ -14,7 +14,7 @@
                         MY STACK
                     </h1>
                     <h2 class="subtitle">
-                        Your local development environment
+                        Your local development environment - v3
                     </h2>
                 </div>
             </div>

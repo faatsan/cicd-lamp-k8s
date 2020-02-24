@@ -1,2 +1,2 @@
 # cicd-lamp-k8s
-A basic LAMP stack environment built using Jenkins to k8s with versioning
+A basic LAMP stack environment built using Jenkins to k8s

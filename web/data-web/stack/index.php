@@ -53,7 +53,7 @@
                         <div class="content">
                             <ul>
                                 <li><a href="phpinfo.php">phpinfo()</a></li>
-                                <li><a href="http://phpmyadmin.hanif.sebelassatu.net">phpMyAdmin</a></li>
+                                <li><a href="http://phpmyadmin-kube.hanif.sebelassatu.net">phpMyAdmin</a></li>
                                 <li><a href="test_db.php">Test DB Connection</a></li>
                             </ul>
                         </div>

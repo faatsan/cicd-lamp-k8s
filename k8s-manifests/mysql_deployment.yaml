@@ -1,0 +1,34 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: mysql
+  labels:
+    app: webapp-ms
+spec:
+  selector:
+    matchLabels:
+      app: webapp-ms
+      tier: mysql
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: webapp-ms
+        tier: mysql
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_DATABASE
+          value: png
+        - name: MYSQL_PASSWORD
+          value: png
+        - name: MYSQL_ROOT_PASSWORD
+          value: tiger
+        - name: MYSQL_USER
+          value: png
+        image: mysql:5.7
+        name: mysql
+        ports:
+        - containerPort: 3306
+          name: mysql

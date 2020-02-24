@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: webapp-ms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-ms
+      tier: frontend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: webapp-ms
+        tier: frontend
+    spec:
+      containers:
+      - image: beckblurry/php-apache
+        name: webapp-ms
+        ports:
+        - containerPort: 80
+        - containerPort: 443

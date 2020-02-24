@@ -11,10 +11,10 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        MY STACK
+                        MY STACK v1
                     </h1>
                     <h2 class="subtitle">
-                        Your local development environment - v3
+                        Your local development environment - 
                     </h2>
                 </div>
             </div>

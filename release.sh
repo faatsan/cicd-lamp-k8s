@@ -5,6 +5,8 @@ IMAGE=php-apache
 version=`cat VERSION`
 echo "version: $version"
 
+git pull 
+
 sudo docker build -t beckblurry/php-apache:latest -f web/Dockerfile .
 
 # tag it

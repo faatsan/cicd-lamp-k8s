@@ -4,7 +4,7 @@ metadata:
   name: phpmyadmin-lamp-vs
 spec:
   hosts:
-  - "phpmyadmin-kube.hanif.sebelassatu.net"
+  - "phpmyadmin-lamp.hanif.sebelassatu.net"
   gateways:
   - phpmyadmin-lamp-gw
   http:

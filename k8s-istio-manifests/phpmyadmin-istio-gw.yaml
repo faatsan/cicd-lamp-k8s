@@ -11,4 +11,4 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "phpmyadmin-kube.hanif.sebelassatu.net"
+    - "phpmyadmin-lamp.hanif.sebelassatu.net"

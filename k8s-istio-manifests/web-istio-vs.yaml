@@ -4,7 +4,7 @@ metadata:
   name: web-lamp-vs
 spec:
   hosts:
-  - "web-kube.hanif.sebelassatu.net"
+  - "web-lamp.hanif.sebelassatu.net"
   gateways:
   - web-lamp-gw
   http:

@@ -3,19 +3,16 @@ kind: Deployment
 metadata:
   name: phpmyadmin
   labels:
-#    app: phpmyadmin
-    app: webapp-ms
+    app: phpmyadmin
 spec:
   replicas: 1
   selector:
     matchLabels:
-#      app: phpmyadmin
-      app: webapp-ms
+      app: phpmyadmin
   template:
     metadata:
       labels:
-#        app: phpmyadmin
-	app: webapp-ms
+        app: phpmyadmin
     spec:
       containers:
         - name: phpmyadmin

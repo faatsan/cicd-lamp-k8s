@@ -4,15 +4,18 @@ metadata:
   name: phpmyadmin
   labels:
     app: phpmyadmin
+    app: webapp-ms
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: phpmyadmin
+      app: webapp-ms
   template:
     metadata:
       labels:
         app: phpmyadmin
+	app: webapp-ms
     spec:
       containers:
         - name: phpmyadmin

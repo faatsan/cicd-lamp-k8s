@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: phpmyadmin-lamp-vs
+spec:
+  hosts:
+  - "phpmyadmin-kube.hanif.sebelassatu.net"
+  gateways:
+  - phpmyadmin-lamp-gw
+  http:
+  - route:
+    - destination:
+        port:
+          number: 8280
+        host: phpmyadmin

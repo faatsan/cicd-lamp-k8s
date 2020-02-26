@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: web-lamp-vs
+spec:
+  hosts:
+  - "web-kube.hanif.sebelassatu.net"
+  gateways:
+  - web-lamp-gw
+  http:
+  - route:
+    - destination:
+        port:
+          number: 80
+        host: web

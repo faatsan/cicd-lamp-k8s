@@ -9,4 +9,3 @@ spec:
   selector:
     app: mysqlapp-ms
     tier: mysql
-  clusterIP: None

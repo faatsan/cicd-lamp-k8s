@@ -1,20 +1,18 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  labels:
-    app: webapp-ms
 spec:
   selector:
     matchLabels:
-      app: webapp-ms
+      app: mysqlapp-ms
       tier: mysql
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: webapp-ms
+        app: mysqlapp-ms
         tier: mysql
     spec:
       containers:

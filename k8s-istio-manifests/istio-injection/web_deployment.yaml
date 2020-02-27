@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web
@@ -18,6 +18,16 @@ spec:
         app: webapp-ms
         tier: frontend
     spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: app
+                operator: In
+                values:
+                - webapp-ms
+            topologyKey: "kubernetes.io/hostname"
       containers:
       - image: beckblurry/php-apache
         name: webapp-ms

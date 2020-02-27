@@ -2,13 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql
-  labels:
-    app: webapp-ms
 spec:
   ports:
     - name: mysql
       port: 3306
   selector:
-    app: webapp-ms
+    app: mysqlapp-ms
     tier: mysql
   clusterIP: None

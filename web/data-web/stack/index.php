@@ -11,7 +11,7 @@
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        MY STACK | Version 0.0.6
+                        MY STACK | Version 0.0.8
                     </h1>
                     <h2 class="subtitle">
                         Your local development environment - 
@@ -55,6 +55,7 @@
                                 <li><a href="phpinfo.php">phpinfo()</a></li>
                                 <li><a href="http://phpmyadmin-lamp.hanif.sebelassatu.net">phpMyAdmin</a></li>
                                 <li><a href="test_db.php">Test DB Connection</a></li>
+                                <li><a href="test_redis.php">Test Redis Connection</a></li>
                             </ul>
                         </div>
                     </div>

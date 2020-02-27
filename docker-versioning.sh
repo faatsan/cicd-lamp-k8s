@@ -24,5 +24,5 @@ else
         sudo docker push $USERNAME/$IMAGE:latest
         sudo docker push $USERNAME/$IMAGE:$version
 
-        sudo docker rm -f $(sudo docker ps -a | grep $IMAGE | awk '{print $1}'); sudo docker run --name $IMAGE -p 80:80 --link mysql:mysql -d $USERNAME/$IMAGE:latest
+        sudo docker rm -f $(sudo docker ps -a | grep $IMAGE | awk '{print $1}'); sudo docker run --name $IMAGE -p 80:80 --link mysql:mysql --link redis:redis -d $USERNAME/$IMAGE:latest
 fi

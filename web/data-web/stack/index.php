@@ -14,7 +14,7 @@
                         MY STACK | Version 0.0.8
                     </h1>
                     <h2 class="subtitle">
-                        Your local development environment - 
+                        Your local development environment
                     </h2>
                 </div>
             </div>

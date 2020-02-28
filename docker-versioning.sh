@@ -9,10 +9,10 @@ CHECKIMAGE=$(sudo docker images | grep php-apache)
 
 if [ -z $CHECKIMAGE ]; then
 
-        sudo docker build -t beckblurry/php-apache:latest -f web/Dockerfile .
-        sudo docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
-        sudo docker push $USERNAME/$IMAGE:latest
+        sudo docker build -t beckblurry/php-apache:$version -f web/Dockerfile .
+        sudo docker tag $USERNAME/$IMAGE:$version $USERNAME/$IMAGE:latest
         sudo docker push $USERNAME/$IMAGE:$version
+        sudo docker push $USERNAME/$IMAGE:latest
 
         sudo docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=tiger -e MYSQL_DATABASE=png -e MYSQL_USER=png -e MYSQL_PASSWORD=png -d mysql:5.7
         sudo docker run --name php-apache -p 80:80 --link mysql:mysql --link redis:redis -d beckblurry/php-apache
@@ -20,10 +20,10 @@ if [ -z $CHECKIMAGE ]; then
 	sudo docker run --name redis -p 6379:6379 -d redis
 
 else
-        sudo docker build -t beckblurry/php-apache:latest -f web/Dockerfile .
-        sudo docker tag $USERNAME/$IMAGE:latest $USERNAME/$IMAGE:$version
-        sudo docker push $USERNAME/$IMAGE:latest
+        sudo docker build -t beckblurry/php-apache:$version -f web/Dockerfile .
+        sudo docker tag $USERNAME/$IMAGE:$version $USERNAME/$IMAGE:latest
         sudo docker push $USERNAME/$IMAGE:$version
+        sudo docker push $USERNAME/$IMAGE:latest
 
         sudo docker rm -f $(sudo docker ps -a | grep $IMAGE | awk '{print $1}'); sudo docker run --name $IMAGE -p 80:80 --link mysql:mysql --link redis:redis -d $USERNAME/$IMAGE:latest
 fi

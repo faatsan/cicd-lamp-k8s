@@ -6,13 +6,13 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: web-kube.hanif.sebelassatu.net
+  - host: webdemok8.ms-biznetgio.net
     http:
       paths:
       - backend:
           serviceName: web
           servicePort: 80
-  - host: phpmyadmin-kube.hanif.sebelassatu.net
+  - host: phpmyadmin-demok8.ms-biznetgio.net
     http:
       paths:
       - backend:

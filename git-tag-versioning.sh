@@ -1,5 +1,5 @@
 #!/bin/sh
-USERNAME=faatsan
+USERNAME=rascalbrick
 IMAGE=php-apache
 
 version=`cat VERSION`
